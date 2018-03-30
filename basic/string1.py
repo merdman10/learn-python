@@ -36,9 +36,9 @@ def donuts(count):
 # so 'spring' yields 'spng'. However, if the string length
 # is less than 2, return instead the empty string.
 def both_ends(s):
-  text = str(s[0:1]) + str(s[-2:0])
+  text = str(s[0:2]) + str(s[-2:])
   if len(s) < 2:
-    text = " " #not sure how to do this
+    text = ""
   return text
 
 
@@ -56,7 +56,7 @@ def fix_start(s):
   word_end = s[1:]
   replace = word_end.replace(word_start,'*')
   expl = word_start + replace
-  print expl
+  return expl
 
 
 # D. MixUp
@@ -67,7 +67,7 @@ def fix_start(s):
 #   'dog', 'dinner' -> 'dig donner'
 # Assume a and b are length 2 or more.
 def mix_up(a, b):
-  # +++your code here+++
+  
   return
 
 
