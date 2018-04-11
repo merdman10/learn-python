@@ -17,7 +17,7 @@ def remove_adjacent(nums):
   for i in range(len(nums)-1):
     if nums[i] != nums[i+1]:
      short.append(nums[i]) 
-     short.append(nums[-1])
+  short.append(nums[-1])
   return short
 
 # E. Given two lists sorted in increasing order, create and return a merged
