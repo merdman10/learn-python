@@ -14,6 +14,8 @@
 # modify the passed in list.
 def remove_adjacent(nums):
   short = []
+  if nums == []:
+    return nums
   for i in range(len(nums)-1):
     if nums[i] != nums[i+1]:
      short.append(nums[i]) 
